@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <style>
+        body{
+            background-color: rgb(246, 234, 183); 
+            font-family: Geneva, Verdana, sans-serif;
+        }
+        h1, h2, h3, b{
+            color: rgb(42, 42, 169);
+        }
+        h1, nav{
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: rgb(193, 141, 10);
+            margin-right: 20px;
+            margin-left: 5px;
+            font-size: 1em;
+        }
+        a:hover {
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .maincontent {
+            width: 80%;
+            margin: 0 auto;
+            background-color:  rgb(255, 252, 238);
+            padding: 20px;
+        }
+        figure {
+            float: right;
+            margin: 0 0 10px 20px;
+            width: 40%;
+        }
+        figcaption {
+            text-align: center;
+            font-size: 0.8em;
+        }
+        figcaption a{
+            text-decoration: none;
+            color: rgb(193, 141, 10);
+        }
+        img {
+            max-width: 100%;
+        }
+        @media (max-width: 800px) {
+            figure {
+                float: none;
+                width: 100%;
+                margin: 0 0 15px 0;
+            }
+        }
+        .form{
+            width: 80%;
+            margin: 0 auto;
+        }
+        .credits{
+            width: 30%;
+            margin: 0 auto;
+        }
+        #output{
+            width: 80%;
+            margin: 0 auto;
+        }
+        #bom{
+            width: 30%;
+            margin: 0 auto;
+            font-size: 9pt;
+        };
+    </style>
+</head>
+<body>
+
+    <h1>The Blue-Ringed Octopus</h1>
+    <nav>
+        <a href="#description">Description</a>
+        <a href="#habitat">Habitat</a>
+        <a href="#diet">Diet</a>
+        <a href="#workscited">Works Cited</a>
+    </nav>
+   <br>
+    <div class="maincontent">
+    
+    <figure>
+        <img src="br.jpg" alt="Blue-ringed octopus">
+        <figcaption><a href="https://www.britannica.com/animal/blue-ringed-octopus#/media/1/2075992/238413">via Encyclopædia Britannica</a></figcaption>
+    </figure>
+
+
+    <h2 id="description">Description and Overview</h2>
+    <p>The blue-ringed octopus is an extremely venomous species of cephalopod that make up the genus <i>Hapalochlaena</i>. There are four species in this genus: the <b>greater blue-ringed octopus</b>, the <b>southern blue-ringed octopus</b>, the <b>blue-lined octopus</b>, and <b>H. nierstraszi</b>, the latter being a very rare specimen that was caught only once in 1938 and once in 2013.</p>
+    <p>Blue-ringed octopuses are very small, measuring from 5-8 inches. They are pale yellow and have blue and black/brown rings (or stripes) that flare when threatened. Due to their small size, their bites are often painless, but their venom contains tetrodotoxin, histamine, tryptamine, octopamine, taurine, acetylcholine, and dopamine<sup>1</sup>, but the main neurotoxin in its venom is tetrodotoxin, which is 1000 times more toxic than cyanide. This causes respiratory arrest, blindness, and heart failure, but death from the blue-ringed octopus usually comes from suffocation due to paralysis of the diaphragm. It's estimated that one blue-ringed octopus carries enough venom to kill over 20 humans.</p>
+    
+    <h2 id="habitat">Habitat</h2>
+    <p>Despite their deadly reputation, blue-ringed octopuses are actually very docile and prefer solitude. (Their bites are thought to be defense against being picked up or stepped on.) They often hide in crevices, under rocks, and inside seashells. Most blue-ringed octopuses are found around Australia, but have been found off the coast of Japan and Korea. The <b>greater blue ringed-octopus</b> are widespread in the Indo-West Pacific waters, ranging from Sri Lanka to the Phillipines to the coasts off Australia. The rare <b>H. nierstraszi</b> specimens were caught in the Bay of Bengal in the northeastern Indian Ocean.</p>
+
+    <h2 id="diet">Diet</h2>
+    <p>Like other cephalopods, the blue-ringed octopus preys on crustaceans, small fish, and mollusks. Their strong beak can crack shells and exoskeletons. Some blue-ringed octopuses even go after bivalves and use their leftover shells as shelter.</p>
+    <p>Their venom also comes in handy when it comes to hunting for food. The <b>southern blue-ringed octopus</b> uses its venom to hunt its prey by releasing its venom into the water. It paralyzes the animal and allows the blue-ringed octopus to move in for the kill. They also inject venom into their prey when biting through its shell.</p>
+    </div>
+    <br>
+
+    <div id="octoInfo" class="maincontent">
+        <h2>At a Glance</h2>
+        <p id="octoInfoDisplay"></p>
+    </div>
+    <br>
+
+    <div id="funFacts" class="maincontent">
+        <h2>Blue-Ringed Octopus Fun Facts</h2>
+        <button id="factButton">Click to see a Fun Fact!</button>
+        <p id="factDisplay"></p>
+    </div>
+
+    <div class="form">
+        <h2>Leave a comment!</h2>
+        <form name="siteForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="30"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br>
+    <div id="output"></div>
+    <br>
+
+    <div id="bom"></div>
+   
+    <div class="credits">
+    <h3 id="workscited">Works Cited</h3>
+    <ul>
+    <li><a href="https://animaldiversity.org/accounts/Hapalochlaena_lunulata/">https://animaldiversity.org/accounts/Hapalochlaena_lunulata/</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Blue-ringed_octopus">https://en.wikipedia.org/wiki/Blue-ringed_octopus</a></li>
+    <li><a href="https://oceana.org/marine-life/southern-blue-ringed-octopus/">https://oceana.org/marine-life/southern-blue-ringed-octopus/</a></li>
+    <li><a href="https://www.britannica.com/animal/blue-ringed-octopus">https://www.britannica.com/animal/blue-ringed-octopus</a></li>
+</ul>
+</div>
+
+<script src="final.js"></script>
+</body>
+</html>
